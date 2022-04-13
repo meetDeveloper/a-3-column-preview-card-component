@@ -28,7 +28,9 @@ body{
 }
 
 .container{
-    max-width:100rem;
+    max-width:99rem;
+    transform : translateY(5%);
+
 }
 
 .grid{
@@ -126,7 +128,7 @@ body{
     }
 }
 
-/* .attribution { 
+.attribution { 
     font-size: 1.2rem; 
     text-align: center; 
     margin-top: 3.2rem;
@@ -142,4 +144,4 @@ body{
 .attribution a:active{
     color: #7BAE7F;
     text-decoration: none;
-} */
+}
