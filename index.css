@@ -16,14 +16,19 @@ FONT SIZE SYSTEM (px)
 }
 
 body{
+    height: 100vh;
     font-size: 1.5rem;
     font-family: "Lexend Deca";
     font-weight: 400;
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:center;
 }
 
 .container{
-    max-width:144rem;
-    margin: 10rem auto;
+    max-width:100rem;
 }
 
 .grid{
@@ -99,6 +104,11 @@ body{
 }
 
 @media (max-width : 24em){
+    body{
+        height:inherit;
+        padding: 4.8rem 2.4rem;
+    }
+
     .grid{
         grid-template-columns: 1fr;
     }
@@ -116,6 +126,20 @@ body{
     }
 }
 
+.attribution { 
+    font-size: 1.2rem; 
+    text-align: center; 
+    margin-top: 3.2rem;
+}
 
-.attribution { font-size: 1.2rem; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a:link,
+.attribution a:visited{
+    color: #95D7AE;
+    transition: all 3s;
+}
+
+.attribution a:hover,
+.attribution a:active{
+    color: #7BAE7F;
+    text-decoration: none;
+}
